@@ -1,0 +1,115 @@
+/* Couleurs principales */
+
+$background-light: #ffffff;
+$background-dark: #000000;
+$text-light: #ffffff;
+$text-dark: #000000;
+$card-color: #FF6060;
+$card-color-contour: linear-gradient(#FFFFFF00, #0A0A0A00, #04040469, #000000);
+$background-color-card: #F6F6F6;
+$police-global: "Montserrat", sans-serif;;
+
+
+/* Body */
+body{
+    font-family: $police-global;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $background-light;
+  font-size: 24px;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: $text-dark;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/* Main */
+.home-title{
+    font-size: 48px;
+    background-image: url(/public/Mask\ Group.png);
+    color: $text-light;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+/* Card */
+.cards-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    background-color: $background-color-card;
+    border-radius: 25px;
+    color: $text-light;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.card{
+    width: 25%;
+    background-color: $card-color;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card h2{
+    display: flex;
+    text-align: start;
+    padding-left: 5px;
+}
+
+.img-card{
+    max-width: 340px;
+    height: 340px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer{
+    background-color: $background-dark;
+    color: $text-light;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    gap: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
