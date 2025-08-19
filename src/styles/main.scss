@@ -46,6 +46,7 @@ body {
   }
 }
 
+/* Home Page */
 /* Main */
 .home-title {
   font-size: 48px;
@@ -93,6 +94,45 @@ body {
       border-radius: 10px;
       object-fit: cover;
     }
+  }
+}
+
+/* About Page */
+/* Collapse */
+.picture-container {
+  .about-banniere {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 160px;
+      border-radius: 25px;
+    }
+  }
+}
+
+.collapse {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto 30px auto;
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: $card-color;
+  color: $text-light;
+  border-radius: 5px;
+
   }
 }
 
