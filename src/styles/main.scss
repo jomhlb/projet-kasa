@@ -80,6 +80,8 @@ body {
     background-color: $card-color;
     padding: 15px;
     border-radius: 10px;
+    text-decoration: none;
+    color: $text-light;
 
     h2 {
       display: flex;

@@ -1,10 +1,14 @@
-function Card({ title, cover }) {
+import { Link } from 'react-router-dom';
+
+function Card({ apartment }) {
+  const { title, cover, id } = apartment;
+
   return (
-    <div className="card">
-      <img src={cover} alt={title} className="img-card"/>
+    <Link to={`/apartments/${id}`} className="card">
+      <img src={cover} alt={title} className="img-card" />
       <h2>{title}</h2>
-    </div>
-  )
+    </Link>
+  );
 }
 
-export default Card
+export default Card;
