@@ -1,10 +1,10 @@
-import Navbar from '../Navbar/index'
+import Banner from '../Banner/index';
 import Footer from '../Footer';
 
 function Layout({ children }) {
-    return(
+  return (
     <>
-      <Navbar />
+      <Banner />
       <main>{children}</main>
       <Footer />
     </>
