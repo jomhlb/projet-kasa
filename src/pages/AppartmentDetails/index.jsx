@@ -1,5 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom';
 import data from '../../data/data.json';
+import Slideshow from '../../components/Slideshow';
+import Layout from '../../components/Layout';
 
 function ApartmentDetails() {
   const { id } = useParams();
@@ -19,41 +21,39 @@ function ApartmentDetails() {
   } = apartment;
 
   return (
-    <div className="apartment-detail">
-      <h1 className="apartment-title">{title}</h1>
-      <p className="apartment-location">{location}</p>
+    <Layout>
+      <div className="apartment-detail">
+        <Slideshow pictures={pictures} />
 
-      <div className="apartment-pictures">
-        {pictures.map((pic, index) => (
-          <img key={index} src={pic} alt={`${title} ${index + 1}`} />
-        ))}
-      </div>
+        <h1 className="apartment-title">{title}</h1>
+        <p className="apartment-location">{location}</p>
 
-      <div className="apartment-info">
-        <div className="host">
-          <p>{host.name}</p>
-          <img src={host.picture} alt={host.name} />
+        <div className="apartment-info">
+          <div className="host">
+            <p>{host.name}</p>
+            <img src={host.picture} alt={host.name} />
+          </div>
+
+          <p className="description">{description}</p>
+
+          <p className="rating">Rating : {rating} / 5</p>
+
+          <h3>Équipements :</h3>
+          <ul>
+            {equipments.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <h3>Tags :</h3>
+          <ul className="tags">
+            {tags.map((tag, index) => (
+              <li key={index}>{tag}</li>
+            ))}
+          </ul>
         </div>
-
-        <p className="description">{description}</p>
-
-        <p className="rating">Rating : {rating} / 5</p>
-
-        <h3>Équipements :</h3>
-        <ul>
-          {equipments.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-
-        <h3>Tags :</h3>
-        <ul className="tags">
-          {tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
-          ))}
-        </ul>
       </div>
-    </div>
+    </Layout>
   );
 }
 
