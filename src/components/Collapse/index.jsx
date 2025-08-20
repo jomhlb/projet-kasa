@@ -21,10 +21,6 @@ function Collapse({ title, children }) {
         ref={contentRef}
         style={{
           maxHeight: `${height}px`,
-          overflow: 'hidden',
-          transition: 'max-height 0.3s ease',
-          backgroundColor: '#F6F6F6',
-          padding: isOpen ? '15px' : '0px',
         }}
       >
         {children}

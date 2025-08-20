@@ -1,11 +1,11 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import data from '../../data/data.json';
 
 function ApartmentDetails() {
   const { id } = useParams();
   const apartment = data.find((item) => item.id === id);
 
-  if (!apartment) return <p>Appartement introuvable</p>;
+  if (!apartment) return <Navigate to="/error" replace />;
 
   const {
     title,
