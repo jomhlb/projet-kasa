@@ -1,0 +1,36 @@
+.collapse {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto 30px auto;
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: $card-color;
+  color: $text-light;
+  border-radius: 5px;
+
+      h3 {
+      font-size: 24px;
+    }
+  }
+
+  .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: $background-color-card;
+    padding: 0 15px;
+
+    &.open {
+      padding: 15px;
+    }
+  }
+}

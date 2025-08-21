@@ -1,0 +1,12 @@
+/* Footer */
+footer {
+  background-color: $background-dark;
+  color: $text-light;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0 10px;
+  gap: 10px;
+  font-size: 24px;
+}

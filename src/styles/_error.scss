@@ -1,0 +1,30 @@
+/* Error Page */
+.error-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .error-title{
+    color: $card-color;
+    font-size: 200px;
+    margin-top: 50px;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+    .error-subtitle{
+      color: $card-color;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 80px;
+      padding: 0;
+      font-size: 30px;
+  }
+
+   .error-link {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 98px;
+    color: $text-dark;
+  }
+  }

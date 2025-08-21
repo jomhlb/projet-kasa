@@ -1,0 +1,49 @@
+.slideshow {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 40px;
+
+  .picture-slideshow {
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: $text-light;
+    font-size: 100px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .button-left {
+    left: 10px;
+    background-color: transparent;
+  }
+
+  .button-right {
+    right: 10px;
+    background-color: transparent;
+  }
+
+  .button-number {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: transparent;
+    color: $text-light;
+    padding: 4px 10px;
+    font-size: 18px;
+  }
+}

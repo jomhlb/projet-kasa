@@ -1,0 +1,13 @@
+/* Home Page */
+.home-title {
+  font-size: 48px;
+  background-image: url(/Backgroung.png);
+  color: $text-light;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 25px;
+}

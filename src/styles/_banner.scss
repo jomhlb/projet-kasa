@@ -1,0 +1,52 @@
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $background-light;
+  font-size: 24px;
+
+  &-logo {
+    img {
+      height: 50px;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: $text-dark;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Media query pour tablette
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 18px;
+
+    &-menu {
+      gap: 17px;
+    }
+  }
+}
+
+// Media query pour mobile
+@media (max-width: $breakpoint-mobile) {
+  .navbar {
+    font-size: 12px;
+
+      &-logo {
+    img {
+      height: 30px;
+
+  }
+}
+}}

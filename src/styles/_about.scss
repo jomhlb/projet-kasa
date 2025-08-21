@@ -1,0 +1,15 @@
+/* About Page */
+.picture-container {
+  .about-banniere {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 160px;
+      border-radius: 25px;
+    }
+  }
+}
