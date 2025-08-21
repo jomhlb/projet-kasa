@@ -9,4 +9,25 @@ footer {
   padding: 50px 0 10px;
   gap: 10px;
   font-size: 24px;
+
+
+  // Media query pour tablette
+  @media (max-width: $breakpoint-tablet) {
+  font-size: 16px;
+  margin-top: 40px;
+  img {
+    height: 40px;
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
 }
+
+// Media query pour mobile
+@media (max-width: $breakpoint-mobile) {
+  font-size: 13px;
+  margin-top: 86px;
+  height: 94px;
+  img {
+    height: 30px;
+  }
+}}

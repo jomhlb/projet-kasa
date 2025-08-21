@@ -4,4 +4,12 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   width: 90%;
+    height: 100%;
+
+}
+
+  @media (max-width: $breakpoint-mobile) {
+    body {
+        min-height: 100vh;
+  }
 }

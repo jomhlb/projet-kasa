@@ -9,7 +9,7 @@
   background-color: $background-color-card;
   border-radius: 25px;
   color: $text-light;
-  padding: 50px 0;
+  padding: 30px 10px;
   margin: 50px 0;
 
   .card {
@@ -24,14 +24,52 @@
       display: flex;
       text-align: start;
       padding-left: 5px;
+      font-size: 18px;
     }
 
     .img-card {
       max-width: 340px;
-      height: 340px;
       width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
       border-radius: 10px;
       object-fit: cover;
+    }
+  }
+ }
+
+/* Media query pour tablette */
+@media (max-width: $breakpoint-tablet) {
+  .cards-grid {
+    padding: 0;
+    background-color: transparent;
+
+    .card {
+      width: 42%; 
+      padding: 15px;
+
+      .img-card {
+        max-width: 100%; 
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+}
+
+/* Media query pour mobile */
+@media (max-width: $breakpoint-mobile) {
+  .cards-grid {
+    margin-top: 40px;
+    gap: 20px;
+
+    .card {
+      width: 100%; 
+      padding: 10px;
+
+      .img-card {
+        max-width: 100%;
+        aspect-ratio: 1/1;
+      }
     }
   }
 }

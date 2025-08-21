@@ -14,7 +14,7 @@ function Collapse({ title, children }) {
     <div className="collapse">
       <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
         <h3>{title}</h3>
-        {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+        {isOpen ? <FaChevronDown /> : <FaChevronUp />}
       </div>
       <div
         className="collapse-content"

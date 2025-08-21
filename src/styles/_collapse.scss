@@ -33,4 +33,30 @@
       padding: 15px;
     }
   }
+}  
+
+// Media query pour tablette
+@media (max-width: $breakpoint-tablet) {
+    .collapse{
+        margin-bottom: 20px;
+    }
+  .collapse-header {
+    height: 40px;
+  } 
+
+  h3 {
+    font-size: 15px !important;
+  }
+
+  .collapse-content {
+    font-size: 12px;
+  }
+}
+
+
+// Media query pour mobile
+@media (max-width: $breakpoint-mobile) {
+  h3 {
+    font-size: 13px !important;
+  }
 }

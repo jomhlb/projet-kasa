@@ -27,4 +27,40 @@
     margin-bottom: 98px;
     color: $text-dark;
   }
+
+
+// Media query pour tablette
+@media (max-width: $breakpoint-tablet) {
+  .error-title{
+    font-size: 100px;
+    margin-top: 80px;
+  }
+
+    .error-subtitle{
+      font-size: 20px;
+  }
+
+   .error-link {
+    font-size: 15px;
+    margin-bottom: 113px;
+  }
+  }
+
+
+  // Media query pour mobile
+@media (max-width: $breakpoint-mobile) {
+  .error-title{
+    font-size: 80px;
+  }
+
+    .error-subtitle{
+      font-size: 19px;
+      margin-top: 20px;
+  }
+
+    .error-link {
+    font-size: 14px;
+     margin-bottom: 87px;
+  }
+  }
   }
