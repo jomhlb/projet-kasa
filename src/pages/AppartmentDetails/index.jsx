@@ -24,35 +24,53 @@ function ApartmentDetails() {
     <Layout>
       <div className="apartment-detail">
         <Slideshow pictures={pictures} />
-
-        <h1 className="apartment-title">{title}</h1>
-        <p className="apartment-location">{location}</p>
-
         <div className="apartment-info">
-          <div className="host">
-            <p>{host.name}</p>
-            <img src={host.picture} alt={host.name} />
+          <div className="left">
+            <h1 className="apartment-title">{title}</h1>
+            <p className="apartment-location">{location}</p>
+
+            <ul className="tags">
+              {tags.map((tag, index) => (
+                <li key={index}>{tag}</li>
+              ))}
+            </ul>
           </div>
 
-          <p className="description">{description}</p>
+          <div className="right">
+            <div className="host">
+              <p>{host.name}</p>
+              <img src={host.picture} alt={host.name} />
+            </div>
 
-          <p className="rating">Rating : {rating} / 5</p>
-
-          <h3>Équipements :</h3>
-          <ul>
-            {equipments.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-
-          <h3>Tags :</h3>
-          <ul className="tags">
-            {tags.map((tag, index) => (
-              <li key={index}>{tag}</li>
-            ))}
-          </ul>
+            <div className="rating">
+              {[...Array(5)].map((_, index) => (
+                <span
+                  key={index}
+                  className={index < rating ? 'star filled' : 'star'}
+                >
+                  ★
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div className="apartment-extra">
+          <div className="description-block">
+            <h3>Description</h3>
+            <p className="description">{description}</p>
+          </div>
+
+          <div className="equipments-block">
+            <h3>Équipements</h3>
+            <ul>
+              {equipments.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>{' '}
     </Layout>
   );
 }

@@ -10,6 +10,8 @@ footer {
   gap: 10px;
   font-size: 24px;
 
+  width: 100vw;
+  margin-left: calc(-50vw + 49.5%); 
 
   // Media query pour tablette
   @media (max-width: $breakpoint-tablet) {
