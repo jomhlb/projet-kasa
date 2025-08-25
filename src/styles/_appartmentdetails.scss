@@ -14,7 +14,8 @@
 
     .apartment-location {
       font-size: 18px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      margin-top: 10px;
     }
 
     .tags {
@@ -30,6 +31,7 @@
         border-radius: 30px;
         font-size: 14px;
         list-style-type: none;
+        font-weight: bolder;
       }
     }
   } 
@@ -42,6 +44,7 @@
 
     .rating {
       display: flex;
+      color: $stars-color;
 
       .star {
         font-size: 40px;
@@ -56,9 +59,10 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      font-weight: normal;
 
       p {
-        font-weight: bold;
+        color: $card-color;
         margin: 0;
       }
 
@@ -71,39 +75,131 @@
     }
   }
 } 
-  .apartment-extra {
+
+.apartment-extra {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+  margin-top: 20px;
+
+  .description-block,
+  .equipments-block {
     flex: 1;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 50px;
+    min-width: 300px;
 
-    .description-block,
-    .equipments-block {
+    .collapse-header h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: $text-light;
+      margin: 0;
+      padding: 10px 0;
+    }
 
-      h3 {
-        font-size: 18px;
-        color: $text-light;
-        background-color: $card-color;
-        width: 100%;
-        min-width: 600px;
-        padding: 10px;
-        border-radius: 10px;
+    p,
+    ul {
+      font-size: 18px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .apartment-info {
+    flex-direction: column;
+
+    .left {
+      flex: 1;
+
+      .apartment-title {
+        font-size: 20px;
       }
 
-      p,
-      ul {
-        font-size: 1rem;
+      .apartment-location {
+        font-size: 16px;
+        margin-bottom: 20px;
       }
 
-      ul {
-        list-style: none;
-        padding-left: 0;
+      .tags li {
+        font-size: 12px;
+        }
+      } 
+  
 
-        li {
-          margin-bottom: 0.3rem;
+    .right {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+
+      .rating {
+        display: flex;
+        gap: 5px;
+
+        .star {
+          font-size: 30px;
+        }
+      }
+
+      .host {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 14px;
+          font-weight: normal;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
         }
       }
     }
   }
 
+  .apartment-extra {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: -30px;
+
+    p,
+    ul {
+      font-size: 13px !important;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .apartment-extra {
+    margin-bottom: -80px;
+  }
+  .star {
+    font-size: 20px !important;
+  }
+      p {
+        font-size: 12px !important;
+      } }
+
+@media (max-width: $breakpoint-mobile-320px) {
+  .apartment-extra {
+    margin-left: -5px;
+  }
+}
+
+      
+
+ 

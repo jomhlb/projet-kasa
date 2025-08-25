@@ -22,7 +22,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             </Layout>
           }
         />
-        <Route path="/apartments/:id" element={<ApartmentDetails />} />
+        <Route
+          path="/apartments/:id"
+          element={
+            <Layout>
+              <ApartmentDetails />
+            </Layout>
+          }
+        />
         <Route
           path="/about"
           element={
