@@ -1,4 +1,3 @@
-/* Footer */
 footer {
   background-color: $background-dark;
   color: $text-light;
@@ -9,12 +8,11 @@ footer {
   padding: 50px 0 10px;
   gap: 10px;
   font-size: 24px;
-
   width: 100vw;
   margin-left: calc(-50vw + 49.5%); 
 
-  // Media query pour tablette
-  @media (max-width: $breakpoint-tablet) {
+// Media query pour tablette
+@media (max-width: $breakpoint-tablet) {
   font-size: 16px;
   margin-top: 40px;
   img {
@@ -32,4 +30,5 @@ footer {
   img {
     height: 30px;
   }
-}}
+ }
+}

@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +13,11 @@ function Collapse({ title, children }) {
     <div className="collapse">
       <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
         <h3>{title}</h3>
-        {isOpen ? <FaChevronDown /> : <FaChevronUp />}
+        <img
+          src="/chevrondown.png"
+          alt="Toggle"
+          className={isOpen ? 'open' : ''}
+        />
       </div>
       <div
         className="collapse-content"

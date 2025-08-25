@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 
 export default function Slideshow({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,11 +22,19 @@ export default function Slideshow({ pictures }) {
       {pictures.length > 1 && (
         <>
           <button onClick={prevSlide} className="button-left">
-            <CgChevronLeft />
+            <img
+              src="/chevronleft.png"
+              alt="Précédent"
+              className="chevron-icon-left"
+            />
           </button>
 
           <button onClick={nextSlide} className="button-right">
-            <CgChevronRight />
+            <img
+              src="/chevronright.png"
+              alt="Suivant"
+              className="chevron-icon-right"
+            />
           </button>
 
           <div className="button-number">

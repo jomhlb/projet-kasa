@@ -112,6 +112,7 @@
   }
 }
 
+// Media query pour tablette
 @media (max-width: $breakpoint-tablet) {
   .apartment-info {
     flex-direction: column;
@@ -133,7 +134,6 @@
         }
       } 
   
-
     .right {
       display: flex;
       flex-direction: row-reverse;
@@ -183,6 +183,7 @@
   }
 }
 
+// Media query pour mobile
 @media (max-width: $breakpoint-mobile) {
   .apartment-extra {
     margin-bottom: -80px;
@@ -194,6 +195,7 @@
         font-size: 12px !important;
       } }
 
+// Media query pour mobile 320px
 @media (max-width: $breakpoint-mobile-320px) {
   .apartment-extra {
     margin-left: -5px;

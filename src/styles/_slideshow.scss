@@ -48,18 +48,17 @@
   }
 }
 
+// Media query pour tablette
 @media (max-width: $breakpoint-tablet) {
-  .button-left, .button-right{
-    font-size: 60px !important;
+  .chevron-icon{
+    width: 20px;
+    height: 10px;
   }
     .button-number{
       display: none;
     }
-  }
 
-
-@media (max-width: $breakpoint-mobile) {
-  .button-left, .button-right{
-    font-size: 40px !important;
+    .chevron-icon-right, .chevron-icon-left{
+      width: 20px;
+    }
   }
-}
