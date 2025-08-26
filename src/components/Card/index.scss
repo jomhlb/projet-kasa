@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .cards-grid {
   display: flex;
   flex-direction: row;

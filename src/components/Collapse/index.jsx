@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import './index.scss';
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);

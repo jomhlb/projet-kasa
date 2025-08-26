@@ -1,11 +1,16 @@
-@import './variables';
-@import './bases';
-@import './home';
-@import './cards';
-@import './about';
-@import './collapse';
-@import './error';
-@import './slideshow';
-@import './footer';
-@import './banner';
-@import './appartmentdetails'
+@use './variables' as *;
+
+body {
+  font-family: $police-global;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+}
+
+// Media query pour mobile
+  @media (max-width: $breakpoint-mobile) {
+    body {
+        min-height: 100vh;
+  }
+}

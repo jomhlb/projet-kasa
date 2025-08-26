@@ -1,5 +1,6 @@
 import data from '../../data/data.json';
 import Card from '../../components/Card';
+import './index.scss';
 
 function Home() {
   return (

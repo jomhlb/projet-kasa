@@ -1,4 +1,5 @@
-/* About Page */
+@use '../../styles/variables.scss' as *;
+
 .picture-container .about-banniere img {
   width: 100%;
   object-fit: cover;

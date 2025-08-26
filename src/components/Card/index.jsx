@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './index.scss';
 
 function Card({ apartment }) {
   const { title, cover, id } = apartment;

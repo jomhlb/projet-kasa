@@ -2,6 +2,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import data from '../../data/data.json';
 import Slideshow from '../../components/Slideshow';
 import Collapse from '../../components/Collapse';
+import './index.scss';
 
 function ApartmentDetails() {
   const { id } = useParams();
