@@ -16,7 +16,7 @@ footer {
 // Media query pour tablette
 @media (max-width: $breakpoint-tablet) {
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 68px;
   img {
     height: 40px;
     margin-top: 20px;
@@ -27,7 +27,7 @@ footer {
 // Media query pour mobile
 @media (max-width: $breakpoint-mobile) {
   font-size: 13px;
-  margin-top: 86px;
+  margin-top: 142px;
   height: 94px;
   img {
     height: 30px;

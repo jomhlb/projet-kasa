@@ -1,4 +1,9 @@
 @use '../../styles/variables.scss' as *;
+.about-page{
+  .collapse-header {
+  padding: 0rem 1rem;
+  }
+}
 
 .picture-container .about-banniere img {
   width: 100%;
@@ -8,7 +13,7 @@
   margin-top: 30px;
   margin-bottom: 50px;
 }
-
+  
   // Media query pour tablette
   @media (max-width: $breakpoint-tablet) {
     .picture-container .about-banniere img {
